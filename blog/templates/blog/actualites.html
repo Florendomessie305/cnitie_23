@@ -1,0 +1,97 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="hero4" style="padding: 0; position: relative;margin-top: 100px">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <img src="{% static 'assets/img/rapport%202019.png' %}">
+    </div>
+
+    <!-- Couleur par-dessus les images -->
+    <div class="color-overlay"></div>
+
+    <!-- Contenu texte -->
+    <div class="container">
+      <div class="text-container mb-5">
+
+        <div class="section-title" style="font-size: 40px;margin-top: 57px">
+          <h2 style="color: white">
+            ACTUALITES
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <div class="container-fluid">
+
+      <div class="col-12">
+        <div class="album py-5 bg-light">
+
+          <div class="container">
+
+            <!--boucles articles-->
+              {% for post in posts %}
+
+              <div class="row mb-5">
+              <div class="col-xs-12 col-sm-5 col-md-4 col-lg-6 image-hover">
+                <a href="{{ post.get_absolute_url }}">
+                    {% if post.image %}
+                    <img src="{{ post.image.url }}" class="img-thumbnail blog_list_pict big-img"/>
+                    {% else %}
+                    <img src="{% static 'assets/img/H.jpg' %}" class="img-thumbnail blog_list_pict big-img"/>
+                    {% endif %}
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-7 col-md-8 col-lg-6">
+
+                <p class="pays_most_populaire_date text-secondary">{{ post.author|upper }}  publié il y a {{ post.publish|timesince }}</p>
+                <a>
+                  <p class="pays_most_populaire_title" style="font-weight: bold; overflow-wrap: break-word">{{ post.title }}</p>
+                </a>
+                </a>
+                <p style="text-align: justify; overflow-wrap: break-word">{{ post.body|truncatechars:460 }}</p>
+
+                <a class="btn btn-success read-more-button blog_list_see_more" href="{{ post.get_absolute_url }}">
+                  Lire l'article <i class="fa fa-chevron-right"></i>
+                </a>
+
+              </div>
+            </div>
+            {% endfor %}
+
+            {% if posts.has_other_pages %}
+              <div class="btn-group" role="group" aria-label="Item pagination">
+              {% if posts.has_previous %}
+                  <a href="?page={{ items_page.previous_page_number }}" class="btn btn-outline-primary">&laquo;</a>
+              {% endif %}
+
+              {% for page_number in posts.paginator.page_range %}
+                  {% if posts.number == page_number %}
+                      <button class="btn btn-outline-primary active">
+                          <span>{{ page_number }} <span class="sr-only"></span></span>
+                      </button>
+                  {% else %}
+                  <a href="?page={{ page_number }}" class="btn btn-outline-primary">
+                      {{ page_number }}
+                  </a>
+                  {% endif %}
+              {% endfor %}
+
+              {% if posts.has_next %}
+                <a href="?page={{ items_page.next_page_number }}" class="btn btn-outline-primary">&raquo;</a>
+              {% endif %}
+
+              </div>
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main><!-- End #main -->
+
+{% endblock %}
