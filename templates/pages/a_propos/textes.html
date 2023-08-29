@@ -1,0 +1,58 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="hero4" style="padding: 0; position: relative;margin-top: 100px">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <img src="{% static 'assets/img/rapport%202019.png' %}">
+    </div>
+
+    <!-- Couleur par-dessus les images -->
+    <div class="color-overlay"></div>
+
+    <!-- Contenu texte -->
+    <div class="container">
+      <div class="text-container mb-5">
+
+        <div class="section-title" style="font-size: 40px;margin-top: 57px">
+          <h2 style="color: white">
+            A PROPOS
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="mt-5 mb-5">
+
+    <section id="cta2" class="cta2 container">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="section-title" style="font-size: 40px;">
+          <h2 style="color: white">
+            TEXTES
+          </h2>
+        </div>
+
+        <div class="mt-5" style="padding: 0px  60px 0px 60px;color: white">
+          <button class="btn btn-outline-warning"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/decret-organisation-itie.pdf" target="_blank" style="color: white">Décret portant création, attributions, organisation et fonctionnement du comité national ITIE</a></button>
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/arrete%20fixant%20le%20montant%20des%20indemnites%20des%20sessions%20des%20membres%20du%20Comite%20national%20ITIE%20(1).pdf" target="_blank" style="color: white">Arrêté fixant le montant des indemnites des sessions des membres du Comité national ITIE</a></button>
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/arrete%20portant%20nomination%20des%20membres%20du%20comite%20executif%20du%20comite%20national%20ITIE.pdf" target="_blank" style="color: white">Arrêté portant nomination des membres du comite exécutif du comité national ITIE</a></button>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/decret-nomination-itie-SP.pdf" target="_blank" style="color: white">Décret de nomination du secrétaire permanent du comité national ITIE</a></button><br>
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/procedure-de-designation-des%20membres-des-OSC-au-Comite-Executif%20(1).pdf" target="_blank" style="color: white">Procédure de designation des membres des OSC au comité exécutif</a></button><br>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/Decret%20ITIE%20Nomination%20Bureau.pdf" target="_blank" style="color: white">Décret de nomination Bureau du comité exécutif</a></button><br>
+
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/R%c3%a8glement%20int%c3%a9rieur%202020.pdf" target="_blank" style="color: white">Règlement intérieur 2020</a></button><br>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+{% endblock %}

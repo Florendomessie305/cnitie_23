@@ -1,0 +1,79 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="hero4" style="padding: 0; position: relative;margin-top: 100px">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <img src="{% static 'assets/img/rapport%202019.png' %}">
+    </div>
+
+    <!-- Couleur par-dessus les images -->
+    <div class="color-overlay"></div>
+
+    <!-- Contenu texte -->
+    <div class="container">
+      <div class="text-container mb-5">
+
+        <div class="section-title" style="font-size: 40px;margin-top: 57px">
+          <h2 style="color: white">
+            GOUVERNANCE
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us bg-white">
+      <div class="container" data-aos="fade-up">
+
+        <p style="font-size: 20px;text-align: justify">
+          L’ITIE est une organisation multipartite composée de gouvernements de pays mettant en œuvre et soutenant l’ITIE, d’entreprises et d’organisations de la société civile. Le Conseil d’administration international de l’ITIE constitue son principal organe décisionnel, avec l’appui du Secrétariat international de l’ITIE.        </p>
+
+        <p style="font-size: 20px;text-align: justify">
+          L’ITIE est régie par les statuts de l’ITIE, qui font partie de la Norme ITIE. Elle est enregistrée en tant qu’association à but non lucratif en vertu du droit norvégien.        </p>
+
+      </div>
+    </section><!-- End Why Us Section -->
+    <section id="cta2" class="cta2 container">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row" style="padding-left: 70px">
+          <div>
+            <h2 style="color: white !important;font-weight: bold">
+              NOS PRIORITES POLITIQUES
+            </h2>
+          </div>
+          <div class="row content">
+            <div class="col-lg-8 col-md-10 col-12">
+
+              <p style="font-size: 17px;color: white;text-align: justify">
+                Nos priorités politiques reflètent les objectifs stratégiques de l’ITIE et les domaines-clés dans lesquels nous apportons un soutien aux pays dans la mise en œuvre de la Norme ITIE.              </p>
+              <button class="btn btn-outline-light btn-lg mt-2 btn-carousel">EN SAVOIR PLUS</button>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="mt-5 bg-light">
+      <div class="container" data-aos="fade-up">
+
+          <h2 style="color: #37517e;font-size: 25px;font-weight: bold">
+            Conseil d’administration de l’ITIE
+          </h2>
+
+        <p style="font-size: 20px;text-align: justify">
+          L’ITIE est une organisation multipartite composée de gouvernements de pays mettant en œuvre et soutenant l’ITIE, d’entreprises et d’organisations de la société civile. Le Conseil d’administration international de l’ITIE constitue son principal organe décisionnel, avec l’appui du Secrétariat international de l’ITIE.        </p>
+
+        <p style="font-size: 20px;text-align: justify">
+          L’ITIE est régie par les statuts de l’ITIE, qui font partie de la Norme ITIE. Elle est enregistrée en tant qu’association à but non lucratif en vertu du droit norvégien.        </p>
+
+      </div>
+    </section>
+  </main><!-- End #main -->
+{% endblock %}

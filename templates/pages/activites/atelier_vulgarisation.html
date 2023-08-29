@@ -1,0 +1,72 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="hero4" style="padding: 0; position: relative;margin-top: 100px">
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExample">
+        <img src="{% static 'assets/img/rapport%202019.png' %}">
+    </div>
+
+    <!-- Couleur par-dessus les images -->
+    <div class="color-overlay"></div>
+
+    <!-- Contenu texte -->
+    <div class="container">
+        <div class="text-container mb-5">
+
+            <div class="section-title" style="font-size: 40px;margin-top: 57px">
+                <h2 style="color: white">
+                    ACTIVITES
+                </h2>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<main class="mt-5 mb-5" id="main">
+
+    <section class="cta2 container mt-5" id="cta3">
+        <div class="container" data-aos="zoom-in">
+
+            <div style="padding: 0px  60px 0px 60px;color: white">
+
+                <h2 class="mb-4" style="color: white;text-transform: uppercase;font-size: 25px">
+                    ATELIERS DE VULGARISATION
+                </h2>
+
+
+                <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i>
+                    <a href="https://fichiers.itie.cg/pointe%20noire%20loango.pdf"
+                       style="color: white"
+                       target="_blank">Rapport de mission des ateliers de dissémination des rapports ITIE exercice 2019 -2020 et de sensibilisation sur le protocole de participation de la société civile dans les localités de Pointe-noire et Loango</a></button>
+                <br>
+
+                <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i>
+                    <a href="https://fichiers.itie.cg/sibiti%20niari.pdf"
+                       style="color: white"
+                       target="_blank">Rapport de mission des ateliers de dissémination des rapports ITIE exercice 2019-2020 et de sensibilisation sur le protocole de participation de la société civile dans les localités de Sibiti et Dolisie</a></button>
+                <br>
+
+                <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i>
+                    <a href="https://fichiers.itie.cg/owando.pdf"
+                       style="color: white"
+                       target="_blank">Rapport de mission des ateliers de dissémination des rapports ITIE exercice 2019-2020 et de sensibilisation sur le protocole de participation de la société civile</a></button>
+                <br>
+
+                <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i>
+                    <a href="https://fichiers.itie.cg/rapport%20de%20mission%20des%20ateliers%20de%20vulgarisation%20itie%202018-PN%20-Dol%20(1).pdf"
+                       style="color: white"
+                       target="_blank">Rapport de l'atélier de divulgation du rapport ITIE 2018</a></button>
+                <br>
+
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+</main><!-- End #main -->
+{% endblock %}

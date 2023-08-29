@@ -1,0 +1,58 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="hero4" style="padding: 0; position: relative;margin-top: 100px">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <img src="{% static 'assets/img/rapport%202019.png' %}">
+    </div>
+
+    <!-- Couleur par-dessus les images -->
+    <div class="color-overlay"></div>
+
+    <!-- Contenu texte -->
+    <div class="container">
+      <div class="text-container mb-5">
+
+        <div class="section-title" style="font-size: 40px;margin-top: 57px">
+          <h2 style="color: white">
+            PRODUCTION & COMMERCIALISATION
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="mt-5 mb-5">
+    <section id="cta2" class="cta2 container">
+      <div class="container" data-aos="zoom-in">
+
+        <div style="font-size: 40px;text-align: center">
+          <h2 style="color: white">
+            PRODUCTION
+          </h2>
+        </div>
+
+        <div class="mt-5" style="padding: 0px  60px 0px 60px;color: white">
+          <button class="btn btn-outline-warning"><i class="bi bi-arrow-right mx-2"></i><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Ffichiers.itie.cg%2FITIE%2520%2520PARTAGE%2520%25202019%2520%2520DESAGREGE.xlsx&wdOrigin=BROWSELINK" target="_blank" style="color: white">ITIE Partage 2019 Désagrégé</a></button><br>
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Ffichiers.itie.cg%2FITIE%2520%2520PARTAGE%2520%25202020%2520%2520DESAGREGE.xlsx&wdOrigin=BROWSELINK" target="_blank" style="color: white">ITIE Partage 2020 Désagrégé</a></button><br>
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Ffichiers.itie.cg%2FPRODUCTION%2520FORETS%25202019.xlsx&wdOrigin=BROWSELINK" target="_blank" style="color: white">Production Forestière Par Societé EN 2019</a></button><br>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Ffichiers.itie.cg%2FPRODUCTION%2520FORETS%25202020.xlsx&wdOrigin=BROWSELINK" target="_blank" style="color: white">Production Forestière Par Societé EN 2020</a></button><br>
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Ffichiers.itie.cg%2FPRODUCTION%2520MINIERE%25202019.xlsx&wdOrigin=BROWSELINK" target="_blank" style="color: white">Production Minière par substance et par Société en 2019</a></button><br>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Ffichiers.itie.cg%2FPRODUCTION%2520MINIERE%25202020.xlsx&wdOrigin=BROWSELINK" target="_blank" style="color: white">Production Minière par Substance et par Societé (2020)</a></button><br>
+
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Ffichiers.itie.cg%2FPRODUCTION%2520HYDROCARBURES%25202019.xlsx&wdOrigin=BROWSELINK" target="_blank" style="color: white">Production des Hydrocarbures par opérateur, par permis en 2019</a></button><br>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Ffichiers.itie.cg%2FPRODUCTION%2520HYDROCARBURES%25202020.xlsx&wdOrigin=BROWSELINK" target="_blank" style="color: white">Production des Hydrocarbures en 2020</a></button><br>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+{% endblock %}

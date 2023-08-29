@@ -1,0 +1,55 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="hero4" style="padding: 0; position: relative;margin-top: 100px">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <img src="{% static 'assets/img/rapport%202019.png' %}">
+    </div>
+    <!-- Couleur par-dessus les images -->
+    <div class="color-overlay"></div>
+
+    <!-- Contenu texte -->
+    <div class="container">
+      <div class="text-container mb-5">
+
+        <div class="section-title" style="font-size: 40px;margin-top: 57px">
+          <h2 style="color: white">
+            VALIDATION
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="mt-5 mb-5">
+    <section id="cta2" class="cta2 container">
+      <div class="container" data-aos="zoom-in">
+
+        <div  style="padding: 0px  60px 0px 60px;color: white">
+
+          <h2 class="mb-4" style="color: white;text-transform: uppercase;font-size: 25px">
+            Notes et Mémoires des administrations publiques
+          </h2>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/CONTRAT%20DE%20VENTE%20ET%20ACHAT%20DE%20PETROLE%20BRUT.pdf" target="_blank" style="color: white">Note de l'administration des hydrocarbures etablie en répones aux contestations relevées par l'administrateur indépendant de l'ITIE CONGO</a></button><br>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/Memo_secteur_mines_solides_rapport_2020.pdf" target="_blank" style="color: white">Contrat de vente et achat de pétrole brut entre le Congo et la Congolaise de raffinage</a></button>
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/Note%20CCA%20-%20Traders.pdf" target="_blank" style="color: white">Exercice clos le 31 décembre 2020 SONAREP</a></button><br>
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/Note%20CCA%20-%20dette%20chine.pdf" target="_blank" style="color: white">Situation juridique de certains permis</a></button><br>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/SONAREP%20RGRS%202020%20(1).pdf" target="_blank" style="color: white">Memo du secteur des mines solides</a></button><br>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/Situation%20juridique%20de%20certains%20permis.pdf" target="_blank" style="color: white">Note CCA sur la dette de la Chine</a></button><br>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/memo%20foret.pdf" target="_blank" style="color: white">Note CCA Traders</a></button><br>
+
+          <button class="btn btn-outline-warning mt-3"><i class="bi bi-arrow-right mx-2"></i><a href="https://fichiers.itie.cg/R%c3%a9ponses%20aux%20constatations%20relev%c3%a9es%20par%20l'Administrateur%20Ind%c3%a9pendant%20de%20L'ITIE%20Congo.pdf" target="_blank" style="color: white">Memo forêt</a></button><br>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+{% endblock %}

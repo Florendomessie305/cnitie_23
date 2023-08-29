@@ -1,0 +1,152 @@
+{% load static %}
+{% url 'home' as home %}
+
+{% url 'blog:post_list' as post_list_url %}
+
+{% url 'atelier-sensibilisation' as atelier_sensibilisation_url %}
+{% url 'atelier-vulgarisation' as atelier_vulgarisation_url %}
+{% url 'meeting-report' as meeting_report_url %}
+
+{% url 'secteurMinier' as secteurMinier_url %}
+{% url 'secteurForestier' as secteurForestier_url %}
+{% url 'secteurHydrocarbure' as secteurHydrocarbure_url %}
+
+{% url 'rapportItie' as rapportItie_url %}
+{% url 'revenusVentePetrolier' as revenusVentePetrolier_url %}
+{% url 'rapportActivite' as rapportActivite_url %}
+
+{% url 'universite' as universite_url %}
+{% url 'loi' as loi_url %}
+{% url 'resultat' as resultat_url %}
+
+{% url 'note' as note_url %}
+{% url 'administration' as administration_url %}
+{% url 'ministere' as ministere_url %}
+
+{% url 'mission' as mission_url %}
+{% url 'gouvernance' as gouvernance_url %}
+{% url 'historique' as historique_url %}
+{% url 'texte' as texte_url %}
+
+{% url 'production' as production_url %}
+{% url 'commercialisation' as commercialisation_url %}
+
+{% url 'propriete' as propriete_url %}
+
+<nav class="navbar navbar-expand-lg fixed-top bg-light" style="margin-top: 0px">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto logo" href="{{ home }}"><img src="{% static 'assets/logo/Logo_comite_national.png' %}" alt="" class="img-fluid"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="me-auto">
+        </ul>
+
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ post_list_url }}">Actualités</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Activités
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li><a class="dropdown-item" href="{{ atelier_sensibilisation_url }}">Atelier de sensibilisation</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ atelier_vulgarisation_url }}">Atelier de vulgarisation</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ meeting_report_url }}">Compte rendu des sessions</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contrats
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="{{ secteurMinier_url }}">Secteur Minier</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ secteurForestier_url }}">Secteur Forestier</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ secteurHydrocarbure_url }}">Secteur Hydrocarbure</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rapport
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+              <li><a class="dropdown-item" href="{{ rapportItie_url }}">Rapport ITIE</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ rapportActivite_url }}">Rapport d'activité</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ revenusVentePetrolier_url }}">Revenus et ventes pétrolière de l'Etat</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Publication
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              <li><a class="dropdown-item" href="{{ universite_url }}">Université Marien Ngouabi</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ loi_url }}">Lois</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ resultat_url }}">Résultat</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Validation
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+              <li><a class="dropdown-item" href="{{ note_url }}">Notes et mémoires des administrations publiques</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ administration_url }}">Administrateur indépendant</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ ministere_url }}">Ministères des finances du budget et du protefueille public</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              A Propos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+              <li><a class="dropdown-item" href="{{ mission_url }}">Missions</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ gouvernance_url }}">Gouvernance</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ historique_url }}">Historique</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ texte_url }}">Textes</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown7" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Production & Commercialisation
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown7">
+              <li><a class="dropdown-item" href="{{ production_url }}">Production</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ commercialisation_url }}">Commercialisation</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{ propriete_url }}">Proprietés réelles</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>

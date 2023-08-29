@@ -1,0 +1,85 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="hero4" style="padding: 0; position: relative;margin-top: 100px">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <img src="{% static 'assets/img/rapport%202019.png' %}">
+    </div>
+
+    <!-- Couleur par-dessus les images -->
+    <div class="color-overlay"></div>
+
+    <!-- Contenu texte -->
+    <div class="container">
+      <div class="text-container mb-5">
+
+        <div class="section-title" style="font-size: 40px;margin-top: 57px">
+          <h2 style="color: white">
+            HISTORIQUE
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us bg-white">
+      <div class="container" data-aos="fade-up">
+
+        <h2 style="color: #37517e;font-size: 25px;font-weight: bold">
+          ORIGINE
+        </h2>
+
+        <p style="font-size: 20px;text-align: justify">
+          L’ITIE a été fondée à Londres en juin 2003, lorsque 140 délégués de gouvernements, d’entreprises, de groupes industriels, d’organisations internationales, d’organisations de la société civile et d’investisseurs ont convenu des Principes de l’ITIE, établissant l’ITIE en tant qu’organisation multipartite et sous-tendant sa mission.
+        <p style="font-size: 20px;text-align: justify">
+        L’ITIE a pris son essor notamment grâce à un organe de recherche en développement qui a décrit que les bénéfices potentiels des activités pétrolières, gazières et minières n’étaient pas réalisés, dénonçant leur lien avec la hausse de la pauvreté, des conflits et de la corruption. La transparence et le débat public représentaient un important point de départ pour vaincre cette « malédiction des ressources ».
+        </p>
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!--<section id="cta2" class="cta2 container">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row" style="padding-left: 70px">
+          <div>
+            <h2 style="color: white !important;font-weight: bold">
+              NOS PRIORITES POLITIQUES
+            </h2>
+          </div>
+          <div class="row content">
+            <div class="col-lg-8 col-md-10 col-12">
+
+              <p style="font-size: 17px;color: white;text-align: justify">
+                Nos priorités politiques reflètent les objectifs stratégiques de l’ITIE et les domaines-clés dans lesquels nous apportons un soutien aux pays dans la mise en œuvre de la Norme ITIE.              </p>
+              <button class="btn btn-outline-light btn-lg mt-2 btn-carousel">EN SAVOIR PLUS</button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>-->
+    <section class="mt-5 bg-light">
+      <div class="container" data-aos="fade-up">
+
+          <h2 style="color: #37517e;font-size: 25px;font-weight: bold">
+            VISION COMMUNE DE LA TRANSPARENCE
+          </h2>
+
+        <p style="font-size: 20px;text-align: justify">
+          Au cours des années qui ont précédé la création de l’ITIE, la gouvernance du secteur extractif a de plus en plus éveillé l’intérêt du public. En 1999, l’organisation de la société civile, Global Witness, a publié un rapport examinant l’opacité de la mauvaise gestion du pétrole en Angola, qui a suscité une grande attention. Introduisant le slogan « Publiez ce que vous payez », le rapport appelait les entreprises à adopter « une politique de pleine transparence [en] Angola et dans d’autres pays confrontés à des problèmes similaires de manque de transparence et de redevabilité gouvernementale ». C’est ainsi qu’est apparu Publiez ce que vous payez (PCQVP) en 2002, un groupe de la société civile qui milite en faveur de la transparence dans le secteur extractif.
+        </p>
+
+        <p style="font-size: 20px;text-align: justify">
+          Le gouvernement britannique a jugé opportun de développer une initiative fondée sur la notion de transparence égale de la part des gouvernements et des entreprises. Le Premier Ministre, Tony BLAIR, a soumis l’idée de l’ITIE dans une déclaration donnée à l’occasion du Sommet mondial sur le développement durable, à Johannesburg en septembre 2002. En 2003, le Département britannique pour le Développement international (DFID) a réuni des représentants de la société civile, d’entreprises et de gouvernements qui ont convenu de la nécessité d’élaborer une norme de déclaration.
+        </p>
+
+      </div>
+    </section>
+  </main><!-- End #main -->
+
+{% endblock %}

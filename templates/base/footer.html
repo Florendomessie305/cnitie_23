@@ -1,0 +1,109 @@
+{% load static %}
+{% url 'texte' as texte_url %}
+{% url 'rapportItie' as rapportItie_url %}
+{% url 'meeting-report' as meeting_report_url %}
+{% url 'licences' as licences_url %}
+
+<footer id="footer">
+
+    <div class="footer-top">
+      <div class="container bg-white">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h3><a href="index.html" class="logo me-auto"><img src="{% static 'assets/logo/Logo_comite_national.png' %}" alt="" class="img-fluid" style="width: 150px;"></a></h3>
+
+            <p style="margin-top: -10px;font-size: 16px">Comité national de mise en oeuvre de l'ITIE en République du Congo.</p>
+
+            <p style="margin-top: -7px"><strong><i style="font-size: 20px;color: black;font-weight: bold" class="bi bi-house-door"></i> : </strong> Avenue Amilcar Cabral
+
+              Immeuble de l'ARC 7ème étage</p>
+
+            <p class="mb-1"><strong><i style="font-size: 20px;color: black;font-weight: bold" class="bi bi-envelope"></i> : </strong> itiecg1@gmail.com</p>
+
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4 style="font-weight: bold">DOCUMENTS</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ texte_url }}">Textes organiques</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ meeting_report_url }}">Compte-rendu de session</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ rapportItie_url }}">Rapport ITIE</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://drive.google.com/drive/folders/1SyJgTZR7yGKeXeyqqWOthnNru9jqI4ln?usp=sharing" target="_blank">Données Ouvertes</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ licences_url }}">Licences</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="font-weight: bold">LIEN UTILES</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.finances.gouv.cg/">Ministère des finances</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.sgg.cg/fr/accueil.html">Journal officiel</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://www.mefdd.cg/accueil/">Ministère de l'économie forestière</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.hydrocarbures.gouv.cg/">Ministère des hydrocarbures</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://eiti.org/fr">ITIE INTERNATIONALE</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://eiti.org/fr/offers/republique-du-congo-2022-validation-itie-appel-manifestation-de-points-de-vue-sur-la">validation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>NOS RESEAUX SOCIAUX</h4>
+            <p>Suivez nous sur les réseaux sociaux!</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100080113625767" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/itiecongob/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="mailto:itiecg1@gmail.com" class="google-plus"><i class="bx bxl-gmail"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="bg-light mt-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h4 class="py-4" style="font-size: 35px">Rejoignez-nous</h4>
+                  <p style="margin-top: -25px">S'abonner à notre news letters pour rester informer.</p>
+
+                  <form enctype="multipart/form-data" method="post" action="newsletter/itie-congo-newsletter/subscribe/">
+                    {% csrf_token %}
+                    <div class="form-floating mb-3 col-12">
+                      <input type="email" name="email_field" class="form-control" id="email" placeholder="name@example.com">
+                      <label for="email">Email </label>
+                    </div>
+
+                    <div class="row g-2">
+                      <div class="form-floating col-6">
+                        <input type="text" name="name_field" class="form-control" id="Nom" placeholder="Votre nom">
+                        <label for="nom">Nom</label>
+                      </div>
+
+<!--                      <div class="form-floating col-6">-->
+<!--                        <input type="text" class="form-control" id="Prenom" placeholder="Votre prenom">-->
+<!--                        <label for="Prenom">Prenom</label>-->
+<!--                      </div>-->
+                    </div>
+
+                    <button name="submit" type="submit" class="btn btn-info mb-3 mt-3">SOUMETTRE</button>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div style="text-align: center">
+        &copy; 2020 Copyright: <a href="#">ITIE République du Congo</a>
+      </div>
+    </div>
+
+  </footer>
