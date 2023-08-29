@@ -2,7 +2,6 @@
 backports.zoneinfo==0.2.1
 chardet==5.2.0
 Django==3.2.10
-django-bootstrap5==23.3
 django-imperavi==0.2.3
 django-jazzmin==2.6.0
 django-newsletter==0.9.1
